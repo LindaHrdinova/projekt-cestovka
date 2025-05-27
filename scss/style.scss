@@ -1,0 +1,15 @@
+$color-accent: #f03000;
+$color-white: #ffffff;
+$color-whiteGrey: #f0f0f0;
+$color-lightGrey: #808080;
+$color-grey: #888888;
+$color-darkGrey: #444444;
+$color-black: #000000;
+
+body {
+  background-color: $color-white;
+}
+
+h1 {
+  color: $color-accent;
+}

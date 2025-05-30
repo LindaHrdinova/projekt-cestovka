@@ -23,7 +23,6 @@ $font-openSans: 'Open Sans', sans-serif;
 /* -- BASE -- */
 
 body {
-  padding: 0;
   margin: 36px 20px 40px;
   display: flex;
   justify-content: center;
@@ -34,6 +33,7 @@ h1 {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
+  margin: 0;
 }
 
 h1,
@@ -92,8 +92,12 @@ section {
   margin-bottom: 20px;
 }
 
-.offer {
+.offer,
+.offer__price,
+.offer__text {
   position: relative;
+}
+.offer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,32 +117,27 @@ section {
 .offer__price {
   background-color: $color-accent;
   padding: 10px;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-montserrat;
   color: $color-white;
-  position: relative;
+  font-size: 18px;
 }
 
 .offer__text {
-  position: relative;
   color: $color-white;
 }
 
 .offer__title {
-  position: relative;
   margin: 0;
 }
 
 .offer__description {
   font-family: $font-openSans;
-  position: relative;
   margin: 18px 0 0;
 }
 
 /* -- BENEFITS -- */
 .benefits {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 10px;
 }
 
@@ -191,7 +190,7 @@ section {
 }
 
 .new__text {
-  color: #000000;
+  color: $color-black;
   margin: 10px 20px 20px;
 }
 
@@ -215,10 +214,6 @@ footer {
     margin-top: 40px;
   }
 
-  h1 {
-    margin: 0;
-  }
-
   header {
     display: flex;
     flex-direction: row;
@@ -231,49 +226,35 @@ footer {
   }
 
   .offerList {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 380px 180px;
     gap: 20px;
   }
 
-  .offer--bigger {
-    grid-column: 1 / -1;
-    height: 100%;
-  }
-
+  .offer--bigger,
   .offer--lastMinute {
     grid-column: 1 / -1;
   }
 
   .benefits {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
   }
 
   .benefit {
-    background-color: $color-whiteGrey;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .benefit__icon {
-    margin: 20px auto;
-  }
-
   .benefit__title {
-    color: $color-accent;
-    font-size: 18px;
     margin-top: 0;
   }
 
   .benefit__text {
     padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -294,43 +275,16 @@ footer {
   }
 
   .benefits {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 20px;
-  }
-
-  .benefit {
-    background-color: $color-whiteGrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .benefit__icon {
-    margin: 20px auto;
-  }
-
-  .benefit__title {
-    color: $color-accent;
-    font-size: 18px;
-    margin-top: 0;
-  }
-
-  .benefit__text {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .news {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1auto 1fr;
-    gap: 20px;
+    grid-template-rows: auto 1fr;
   }
 
   .news__title {
-    grid-column: 3 span;
+    grid-column: span 3;
   }
 }

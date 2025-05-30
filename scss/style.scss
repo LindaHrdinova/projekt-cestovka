@@ -20,10 +20,13 @@ $color-black: #000000;
 $font-montserrat: 'Montserrat', sans-serif;
 $font-openSans: 'Open Sans', sans-serif;
 
+/* -- BASE -- */
+
 body {
-  background-color: lightpink;
   padding: 0;
   margin: 36px 20px 40px;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -31,13 +34,6 @@ h1 {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-}
-
-nav {
-  text-align: center;
-  margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 h1,
@@ -59,6 +55,18 @@ section {
   margin-top: 40px;
 }
 
+.container {
+  max-width: 1200px;
+}
+
+/* -- HEADER -- */
+.nav {
+  text-align: center;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav__button {
   color: $color-accent;
   font-family: $font-montserrat;
@@ -73,14 +81,18 @@ section {
   color: $color-white;
 }
 
+/* -- OFFERS -- */
 .offerList {
   display: grid;
   grid-template-rows: 240px 150px 150px;
   gap: 20px;
 }
 
+.offerList__title {
+  margin-bottom: 20px;
+}
+
 .offer {
-  background-color: green;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -123,6 +135,7 @@ section {
   margin: 18px 0 0;
 }
 
+/* -- BENEFITS -- */
 .benefits {
   display: flex;
   flex-direction: column;
@@ -153,12 +166,13 @@ section {
   font-size: 16px;
 }
 
+/* -- NEWS -- */
 .news {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
-/* -- NEWS -- */
 .new {
   background-color: $color-whiteGrey;
   font-family: $font-montserrat;
@@ -168,7 +182,6 @@ section {
 }
 
 .new__date {
-  color: $color-grey;
   margin: 20px 20px 10px;
 }
 
@@ -182,6 +195,7 @@ section {
   margin: 10px 20px 20px;
 }
 
+/* -- FOOTER -- */
 footer {
   background-color: $color-darkGrey;
   color: $color-white;
@@ -196,9 +210,8 @@ footer {
   margin: 0;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   body {
-    background-color: lightcyan;
     margin-top: 40px;
   }
 
@@ -224,17 +237,12 @@ footer {
     gap: 20px;
   }
 
-  .offerList__title {
-    padding-bottom: 20px;
-  }
-
   .offer--bigger {
     grid-column: 1 / -1;
     height: 100%;
   }
 
   .offer--lastMinute {
-    background-color: blue;
     grid-column: 1 / -1;
   }
 
@@ -266,5 +274,63 @@ footer {
   .benefit__text {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .offerList {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px;
+  }
+
+  .offer--bigger {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .offer--lastMinute {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  .benefit {
+    background-color: $color-whiteGrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefit__icon {
+    margin: 20px auto;
+  }
+
+  .benefit__title {
+    color: $color-accent;
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .benefit__text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1auto 1fr;
+    gap: 20px;
+  }
+
+  .news__title {
+    grid-column: 3 span;
   }
 }

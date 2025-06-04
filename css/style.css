@@ -94,6 +94,7 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .offer__img {
@@ -135,6 +136,11 @@ section {
 .offer__description {
   font-family: "Open Sans", sans-serif;
   margin: 18px 0 0;
+}
+
+.detailInfoList {
+  display: grid;
+  gap: 20px;
 }
 
 /* -- BENEFITS -- */
@@ -211,6 +217,58 @@ footer {
   margin: 0;
 }
 
+/* -- OFFER DETAIL CSS -- */
+.offer-titleImg {
+  min-height: 240px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.detailInfo {
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+.detailInfo__title {
+  color: #888888;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+.detailInfo__description {
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailInfo--important {
+  background-color: #f03000;
+  color: #ffffff;
+}
+
+.detailInfo--important .detailInfo__description {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.detailInfo--important .detailInfo__text {
+  opacity: 70%;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.galery img {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin-top: 40px;
@@ -250,6 +308,7 @@ footer {
   .benefit__text {
     padding-left: 20px;
   }
+  /* -- OFFER DETAIL CSS -- */
 }
 @media screen and (min-width: 960px) {
   .offerList {

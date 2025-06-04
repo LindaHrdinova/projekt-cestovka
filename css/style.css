@@ -260,13 +260,13 @@ footer {
   opacity: 70%;
 }
 
-.galery {
+.gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.galery img {
+.gallery img {
   width: 100%;
 }
 
@@ -324,7 +324,7 @@ footer {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
-  .galery {
+  .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -354,5 +354,21 @@ footer {
   }
   .news__title {
     grid-column: span 3;
+  }
+  /* -- OFFER DETAIL CSS -- */
+  .main__detail {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+  .offer-titleImg {
+    min-height: 462px;
+  }
+  .detailInfoList {
+    grid-column: 2;
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-column: 1;
   }
 }/*# sourceMappingURL=style.css.map */

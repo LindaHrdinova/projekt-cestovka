@@ -1,0 +1,62 @@
+@use '../color';
+@use '../font';
+
+/* -- BENEFITS -- */
+.benefits {
+  display: grid;
+  gap: 10px;
+}
+
+.benefit {
+  background-color: color.$color-whiteGrey;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+}
+
+.benefit__icon {
+  margin: 20px auto;
+}
+
+.benefit__title {
+  color: color.$color-accent;
+  font-size: 18px;
+}
+
+.benefit__text {
+  padding-right: 20px;
+}
+
+.benefit__description {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefit__title {
+    margin-top: 0;
+  }
+
+  .benefit__text {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .benefits {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}

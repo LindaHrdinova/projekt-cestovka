@@ -1,0 +1,46 @@
+@use '../color';
+@use '../font';
+@use 'intro';
+@use 'info';
+
+/* --- DESCRIPTION ---*/
+.description {
+  margin-top: 0;
+}
+.description__title {
+  margin: 25px 0;
+}
+
+/* --- GALLERY --- */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery__photo {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* --- GALLERY --- */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .tripDetail {
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /* --- GALLERY --- */
+  .gallery {
+    grid-column: 1;
+  }
+}

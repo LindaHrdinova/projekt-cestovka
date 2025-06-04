@@ -1,0 +1,14 @@
+@use '../color';
+@use '../font';
+@use 'intro';
+@use 'description';
+@use 'gallery';
+@use 'info';
+
+@media screen and (min-width: 960px) {
+  .tripDetail {
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+}

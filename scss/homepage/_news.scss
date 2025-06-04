@@ -1,0 +1,42 @@
+@use '../color';
+@use '../font';
+
+/* -- NEWS -- */
+.news {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.new {
+  background-color: color.$color-whiteGrey;
+  font-family: font.$font-montserrat;
+  font-size: 16px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.new__date {
+  margin: 20px 20px 10px;
+}
+
+.new__title {
+  color: color.$color-accent;
+  margin: 10px 20px;
+}
+
+.new__text {
+  color: color.$color-black;
+  margin: 10px 20px 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .news {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .news__title {
+    grid-column: span 3;
+  }
+}

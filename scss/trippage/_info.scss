@@ -1,0 +1,59 @@
+@use '../color';
+@use '../font';
+
+/* --- INFO --- */
+.tripDetail__info {
+  display: grid;
+  gap: 20px;
+}
+
+.info {
+  background-color: color.$color-grey--background;
+  padding: 20px;
+}
+
+.info__title {
+  color: color.$color-grey;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+.info__description {
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.info--important {
+  background-color: color.$color-accent;
+  color: color.$color-white;
+}
+
+.info--important .info__description {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.info--important .info__title {
+  opacity: 70%;
+  color: color.$color-whiteGrey;
+}
+
+@media screen and (min-width: 768px) {
+  .tripDetail__info {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .tripDetail__info {
+    grid-column: 2;
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,73 +3,71 @@ layout: layouts/template.njk
 title: Cestovka
 ---
 
-<main class="main__detail">
-  <section>
-    <article class="offer offer-titleImg">
-      <img src="/img/photo/palmy@2x.png" class="offer__img" />
-      <div class="offer__text">
-        <h3 class="offer__title detail_title">Pohoda pod palmami</h3>
-        <p class="offer__description detail_description">
-          Nejlepší dovolená pro nejvíc nejlínější lidi na světě
-        </p>
-      </div>
-    </article>
-  </section>
-  <section class="detailInfoList">
-    <div class="detailInfo">
-      <h3 class="detailInfo__title">Termín</h3>
-      <p class="detailInfo__description">
-        <span>13. 8. – 27. 8. 2021</span><span>14 dní / 13 nocí</span>
+<main class="tripDetail">
+  <section class="tripDetail__intro">
+    <img src="/img/photo/palmy@2x.png" class="intro__img" />
+    <div class="intro__text">
+      <h3 class="intro__title">Pohoda pod palmami</h3>
+      <p class="intro__description">
+        Nejlepší dovolená pro nejvíc nejlínější lidi na světě
       </p>
     </div>
-    <div class="detailInfo">
-      <h3 class="detailInfo__title">Hotel</h3>
-      <p class="detailInfo__description">
+  </section>
+  <section class="tripDetail__info">
+    <div class="info">
+      <h3 class="info__title">Termín</h3>
+      <p class="info__description">
+        <span>13. 8. – 27. 8. 2021</span>
+        <span>14 dní / 13 nocí</span>
+      </p>
+    </div>
+    <div class="info">
+      <h3 class="info__title">Hotel</h3>
+      <p class="info__description">
         <span>Azure Moon ****</span>
         <span>dvojlůžkový pokoj</span>
       </p>
     </div>
-    <div class="detailInfo">
-      <h3 class="detailInfo__title">Počet osob / strava</h3>
-      <p class="detailInfo__description">2 osoby / all inclusive</p>
+    <div class="info">
+      <h3 class="info__title">Počet osob / strava</h3>
+      <p class="info__description">2 osoby / all inclusive</p>
     </div>
-    <div class="detailInfo detailInfo--important">
-      <h3 class="detailInfo__title">Cena</h3>
-      <p class="detailInfo__description">31 520 Kč</p>
+    <div class="info info--important">
+      <h3 class="info__title">Cena</h3>
+      <p class="info__description">31 520 Kč</p>
     </div>
   </section>
-  <section class="detail__text">
-    <p>
+  <section class="tripDetail__description">
+    <p class="description">
       Užijte si naprostý klid a pohodu pod palmami – ideální destinaci pro ty,
       kteří si chtějí skutečně odpočinout. Žádné rušné ulice ani přeplněné
       pláže, jen šumění moře, tropické slunce a vychlazený drink v ruce. Tahle
       dovolená je stvořená pro milovníky relaxace, slunečních paprsků a sladkého
       nicnedělání.
     </p>
-    <h2>Hotel Azume Moon ****</h2>
-    <p>
+    <h2 class="description__title">Hotel Azume Moon ****</h2>
+    <p class="description">
       Luxusní hotel Azume Moon nabízí vše, co potřebujete k dokonalému
       odpočinku. Prostorné klimatizované pokoje s výhledem na oceán, soukromý
       bazén, wellness centrum i all inclusive stravování. Každý den si můžete
       dopřát bohaté snídaně, lehké obědy a tematické večeře s čerstvými mořskými
       specialitami.
     </p>
-    <p>
+    <p class="description">
       Personál hotelu je přátelský a vždy připraven splnit každé vaše přání.
       Hotel je obklopen tropickou zahradou, ideální pro klidné procházky, a díky
       přímému přístupu na pláž se během chvilky ocitnete s nohama v písku. Pro
       páry i rodiny s dětmi je to místo, kam se budete chtít vracet.
     </p>
-    <h2>Výlety po okolí</h2>
-    <p>
+    <h2 class="description__title">Výlety po okolí</h2>
+    <p class="description">
       I když je hlavním cílem odpočinek, okolí nabízí spoustu možností pro
       dobrodružnější povahy. Vydejte se na lodní výlet kolem ostrova, navštivte
       místní trhy s exotickým ovocem, nebo si užijte šnorchlování mezi
       korálovými útesy. Výlety jsou organizované s průvodcem a vhodné i pro
       začátečníky.
     </p>
-
-    <p>
+    <p class="description">
       Nedaleko se nachází přírodní rezervace s vodopády a turistickými stezkami,
       ideální pro kratší procházky ve stínu palem. Pokud toužíte po kulturním
       zážitku, můžete si domluvit návštěvu tradiční vesnice a poznat místní
@@ -82,7 +80,14 @@ title: Cestovka
       class="gallery__photo"
       src="/img/detail/hotel1.jpg"
       alt="hotel z venku"
-    /><img src="/img/detail/hotel2.jpg" alt="výhled z bazénu" /><img
+    />
+    <img
+      class="gallery__photo"
+      src="/img/detail/hotel2.jpg"
+      alt="výhled z bazénu"
+    />
+    <img
+      class="gallery__photo"
       src="/img/detail/hotel3.jpg"
       alt="pokoj zevnitř"
     />

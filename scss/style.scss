@@ -75,8 +75,9 @@ section {
   padding: 20px;
   border: 0;
   background-color: transparent;
+  text-decoration: none;
 }
-.nav__button--primary {
+.nav__button:hover {
   background-color: $color-accent;
   color: $color-white;
 }

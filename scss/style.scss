@@ -333,6 +333,29 @@ footer {
   }
 
   /* -- OFFER DETAIL CSS -- */
+  .offer-titleImg {
+    min-height: 380px;
+  }
+  .detail_title {
+    font-size: 48px;
+  }
+
+  .detail_description {
+    font-size: 20px;
+  }
+
+  .detailInfoList {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .galery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 960px) {

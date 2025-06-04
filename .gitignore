@@ -19,3 +19,8 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 [Dd]esktop.ini
+
+
+### ELEVENT ###
+node_modules/
+_site/

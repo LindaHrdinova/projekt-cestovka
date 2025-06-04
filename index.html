@@ -1,156 +1,131 @@
-<!DOCTYPE html>
-<html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Cestovka</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>CESTOVKA</h1>
-        <nav class="nav">
-          <a href=".#lastMinute" class="nav__button" type="button"
-            >Last minute</a
-          >
-          <a href="." class="nav__button">Destinace</a>
-          <a href="." class="nav__button">Časté otázky</a>
-        </nav>
-      </header>
-      <main>
-        <section class="offerList">
-          <a href="pohoda_pod_palmami.html" class="offer offer--bigger">
-            <img src="img/photo/palmy@2x.png" class="offer__img" />
-            <span class="offer__price">17 600 Kč</span>
-            <div class="offer__text">
-              <h3 class="offer__title">Pohoda pod palmami</h3>
-              <p class="offer__description">
-                Nejlepší dovolená pro nejvíc nejlínější lidi na světě
-              </p>
-            </div>
-          </a>
-          <article class="offer">
-            <img src="img/photo/jezero2@2x.png" class="offer__img" />
-            <span class="offer__price">8 490 Kč</span>
-            <div class="offer__text">
-              <h3 class="offer__title">Klid u jezera</h3>
-            </div>
-          </article>
-          <article class="offer">
-            <img src="img/photo/nakole@2x.png" class="offer__img" />
-            <span class="offer__price">4 990 Kč</span>
-            <div class="offer__text">
-              <h3 class="offer__title">Výlet na kole</h3>
-            </div>
-          </article>
-        </section>
-        <section class="benefits">
-          <article class="benefit">
-            <img src="img/svg/map.svg" class="benefit__icon" />
-            <div class="benefit__text">
-              <h3 class="benefit__title">Podpora na místě</h3>
-              <p class="benefit__description">
-                V cílové destinaci jsou k dispozici naši delegáti, kteří vám
-                vždy rádi poradí.
-              </p>
-            </div>
-          </article>
-          <article class="benefit">
-            <img src="img/svg/plane.svg" class="benefit__icon" />
-            <div class="benefit__text">
-              <h3 class="benefit__title">Služby na letišti</h3>
-              <p class="benefit__description">
-                Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti
-                nebudete čekat.
-              </p>
-            </div>
-          </article>
-          <article class="benefit">
-            <img src="img/svg/globe.svg" class="benefit__icon" />
-            <div class="benefit__text">
-              <h3 class="benefit__title">Do celého světa</h3>
-              <p class="benefit__description">
-                Nabízíme pravidelné slevy na vybraných destinací na všech
-                kontinentech.
-              </p>
-            </div>
-          </article>
-          <article class="benefit">
-            <img src="img/svg/shield.svg" class="benefit__icon" />
-            <div class="benefit__text">
-              <h3 class="benefit__title">Vaše bezpečí</h3>
-              <p class="benefit__description">
-                Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám
-                peníze.
-              </p>
-            </div>
-          </article>
-        </section>
-        <section class="offerList--lastMinute" id="lastMinute">
-          <h2 class="offerList__title">Last minute zájezdy</h2>
-          <div class="offerList">
-            <article class="offer offer--lastMinute">
-              <img src="img/photo/lodicka@2x.png" class="offer__img" />
-              <span class="offer__price">15 900 Kč</span>
-              <div class="offer__text">
-                <h3 class="offer__title">Romantika u horského jezera</h3>
-                <p class="offer__description">
-                  Dechberoucí výhledy na horské štíty a zrcadlovou hladinu
-                  jezera.
-                </p>
-              </div>
-            </article>
-            <article class="offer">
-              <img src="img/photo/podkova@2x.png" class="offer__img" />
-              <span class="offer__price">18 500 Kč</span>
-              <div class="offer__text">
-                <h3 class="offer__title">Grand Canyon</h3>
-              </div>
-            </article>
-            <article class="offer">
-              <img src="img/photo/zatoka@2x.png" class="offer__img" />
-              <span class="offer__price">8 900 Kč</span>
-              <div class="offer__text">
-                <h3 class="offer__title">Pěšky po Kanárských ostrovech</h3>
-              </div>
-            </article>
-          </div>
-        </section>
-        <section class="news">
-          <h2 class="news__title">Novinky</h2>
-          <article class="new">
-            <span class="new__date">15. 8. 2020</span>
-            <h3 class="new__title">Magický Zanzibar</h3>
-            <p class="new__text">
-              Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví
-              vůně exotických koření, příznivé klima, teplé moře, exotická flóra
-              i fauna.
-            </p>
-          </article>
-          <article class="new">
-            <span class="new__date">31. 9. 2020</span>
-            <h3 class="new__title">Návrat českých občanů ze zahraničí</h3>
-            <p class="new__text">
-              Všichni občané ČR vracející se ze zahraničí zpět se musí řídit
-              podmínkami uvedenými v platném Ochranném opatření Ministerstva
-              zdravotnictví ČR.
-            </p>
-          </article>
-          <article class="new">
-            <span class="new__date">6. 10. 2020</span>
-            <h3 class="new__title">Na Kubu s PCR testem</h3>
-            <p class="new__text">
-              Při vstupu do země se buď musíte prokázat negativním PCR testem na
-              Covid-19, který byl proveden max. 72 hodin před příletem do
-              destinace.
-            </p>
-          </article>
-        </section>
-      </main>
-      <footer class="footer">
-        <p class="footer__text">©2021, Czechitas</p>
-      </footer>
+---
+layout: template.njk
+title: Cestovka
+---
+
+<main>
+  <section class="offerList">
+    <a href="pohoda_pod_palmami/" class="offer offer--bigger">
+      <img src="img/photo/palmy@2x.png" class="offer__img" />
+      <span class="offer__price">17 600 Kč</span>
+      <div class="offer__text">
+        <h3 class="offer__title">Pohoda pod palmami</h3>
+        <p class="offer__description">
+          Nejlepší dovolená pro nejvíc nejlínější lidi na světě
+        </p>
+      </div>
+    </a>
+    <article class="offer">
+      <img src="img/photo/jezero2@2x.png" class="offer__img" />
+      <span class="offer__price">8 490 Kč</span>
+      <div class="offer__text">
+        <h3 class="offer__title">Klid u jezera</h3>
+      </div>
+    </article>
+    <article class="offer">
+      <img src="img/photo/nakole@2x.png" class="offer__img" />
+      <span class="offer__price">4 990 Kč</span>
+      <div class="offer__text">
+        <h3 class="offer__title">Výlet na kole</h3>
+      </div>
+    </article>
+  </section>
+  <section class="benefits">
+    <article class="benefit">
+      <img src="img/svg/map.svg" class="benefit__icon" />
+      <div class="benefit__text">
+        <h3 class="benefit__title">Podpora na místě</h3>
+        <p class="benefit__description">
+          V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi
+          poradí.
+        </p>
+      </div>
+    </article>
+    <article class="benefit">
+      <img src="img/svg/plane.svg" class="benefit__icon" />
+      <div class="benefit__text">
+        <h3 class="benefit__title">Služby na letišti</h3>
+        <p class="benefit__description">
+          Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti
+          nebudete čekat.
+        </p>
+      </div>
+    </article>
+    <article class="benefit">
+      <img src="img/svg/globe.svg" class="benefit__icon" />
+      <div class="benefit__text">
+        <h3 class="benefit__title">Do celého světa</h3>
+        <p class="benefit__description">
+          Nabízíme pravidelné slevy na vybraných destinací na všech
+          kontinentech.
+        </p>
+      </div>
+    </article>
+    <article class="benefit">
+      <img src="img/svg/shield.svg" class="benefit__icon" />
+      <div class="benefit__text">
+        <h3 class="benefit__title">Vaše bezpečí</h3>
+        <p class="benefit__description">
+          Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.
+        </p>
+      </div>
+    </article>
+  </section>
+  <section class="offerList--lastMinute" id="lastMinute">
+    <h2 class="offerList__title">Last minute zájezdy</h2>
+    <div class="offerList">
+      <article class="offer offer--lastMinute">
+        <img src="img/photo/lodicka@2x.png" class="offer__img" />
+        <span class="offer__price">15 900 Kč</span>
+        <div class="offer__text">
+          <h3 class="offer__title">Romantika u horského jezera</h3>
+          <p class="offer__description">
+            Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.
+          </p>
+        </div>
+      </article>
+      <article class="offer">
+        <img src="img/photo/podkova@2x.png" class="offer__img" />
+        <span class="offer__price">18 500 Kč</span>
+        <div class="offer__text">
+          <h3 class="offer__title">Grand Canyon</h3>
+        </div>
+      </article>
+      <article class="offer">
+        <img src="img/photo/zatoka@2x.png" class="offer__img" />
+        <span class="offer__price">8 900 Kč</span>
+        <div class="offer__text">
+          <h3 class="offer__title">Pěšky po Kanárských ostrovech</h3>
+        </div>
+      </article>
     </div>
-  </body>
-</html>
+  </section>
+  <section class="news">
+    <h2 class="news__title">Novinky</h2>
+    <article class="new">
+      <span class="new__date">15. 8. 2020</span>
+      <h3 class="new__title">Magický Zanzibar</h3>
+      <p class="new__text">
+        Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně
+        exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.
+      </p>
+    </article>
+    <article class="new">
+      <span class="new__date">31. 9. 2020</span>
+      <h3 class="new__title">Návrat českých občanů ze zahraničí</h3>
+      <p class="new__text">
+        Všichni občané ČR vracející se ze zahraničí zpět se musí řídit
+        podmínkami uvedenými v platném Ochranném opatření Ministerstva
+        zdravotnictví ČR.
+      </p>
+    </article>
+    <article class="new">
+      <span class="new__date">6. 10. 2020</span>
+      <h3 class="new__title">Na Kubu s PCR testem</h3>
+      <p class="new__text">
+        Při vstupu do země se buď musíte prokázat negativním PCR testem na
+        Covid-19, který byl proveden max. 72 hodin před příletem do destinace.
+      </p>
+    </article>
+  </section>
+</main>
